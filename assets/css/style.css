@@ -1,0 +1,168 @@
+main {
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content:center;
+}
+
+.Section2{
+  width: 100%;
+  margin-bottom: 50px;
+}
+.Section2 .Text1{
+  text-align: center;
+  width: 120px;
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.Section2 .Text2{
+  text-align:right;
+  font-size: 20px;
+  margin-right: 10px;
+  font-family: Verdana;
+}
+
+#Mainsection{
+  width:600;
+}
+
+.Initial{
+  width: 200px; 
+  height: 50px; 
+  background-color: rgb(36, 112, 184); 
+  color:white; 
+  font-size: 20px; 
+  margin-top:20px;
+  border-radius: 10px;
+  cursor: pointer; 
+}
+
+.Initial:hover{
+  background-color: rgb(18, 188, 240); 
+}
+
+.InitialParagraph{
+  width:500px; 
+  font-size: 20px; 
+  text-align:center; 
+  margin:auto;
+}
+
+.Question{
+  width:400px; 
+  text-align:left; 
+  font-size:30px; 
+  font-weight:bold;
+}
+
+.OptionBtn{
+  display:block; 
+  width: 500px; 
+  height: 50px; 
+  margin-top: 30px; 
+  border-radius:5px; 
+  background-color: rgb(46, 46, 139); 
+  color:white; 
+  font-weight:bold;
+  cursor: pointer;
+  font-size:20px;
+}
+
+.OptionBtn:hover{
+  background-color: rgb(116, 18, 228);
+}
+
+.QResult{
+  font-size: 30px;
+}
+
+.Store{
+  margin-left: 30px; 
+  width: 100px; 
+  height:40px; 
+  background-color:rgb(110, 24, 167); 
+  color:white; 
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.Store:hover{
+  background-color: rgb(210, 18, 228);
+}
+
+.Back, .Clear{
+  background-color:rgb(34, 94, 206);
+  width: 150px;
+  height:50px;
+  color:white;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-right: 40px;
+}
+
+.Back:hover, .Clear:hover{
+  background-color:rgb(27, 182, 209);
+}
+
+.Slist{
+ list-style: none;
+ padding-inline-start: 0px;
+}
+
+.Elist{
+  background-color:rgb(52, 79, 129);
+  color:white;
+  font-size: 20px;
+}
+
+@media (max-width: 550px) {
+
+  #Mainsection{
+    width:100%;
+  }
+
+  .InitialParagraph{
+    width:380px; 
+  }
+
+  .OptionBtn{
+    width: 300px; 
+    height: 50px; 
+    font-size:15px;
+  }
+
+  .Store{
+    margin-top: 30px;
+    margin-left: 20px; 
+  }
+
+  .Question{
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 380px){
+  .InitialParagraph{
+    width:250px; 
+    font-size: 15px; 
+  }
+
+  .Back, .Clear{
+    margin-top:30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .OptionBtn{
+    width: 170px; 
+    height: 50px; 
+    font-size:10px;
+  }
+
+  .Question{
+    font-size: 20px;
+    width: 100%;
+  }
+}
