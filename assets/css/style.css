@@ -1,14 +1,16 @@
+/*Properties defined for main*/
 main {
   width:100%;
   height: 100%;
   display: flex;
   justify-content:center;
 }
-
+/*Properties defined for section with class Section2*/
 .Section2{
   width: 100%;
   margin-bottom: 50px;
 }
+/*Properties defined for text with class Text1 in section with class Section2*/
 .Section2 .Text1{
   text-align: center;
   width: 120px;
@@ -17,17 +19,18 @@ main {
   cursor: pointer;
   margin-left: 10px;
 }
+/*Properties defined for text with class Text2 in section with class Section2*/
 .Section2 .Text2{
   text-align:right;
   font-size: 20px;
   margin-right: 10px;
   font-family: Verdana;
 }
-
+/*Properties defined for the section with id Mainsection*/
 #Mainsection{
   width:600;
 }
-
+/*Properties defined for the button dynamically created with class Initial*/
 .Initial{
   width: 200px; 
   height: 50px; 
@@ -38,25 +41,25 @@ main {
   border-radius: 10px;
   cursor: pointer; 
 }
-
+/*Properties when hovering over button dynamically created with class Initial*/
 .Initial:hover{
   background-color: rgb(18, 188, 240); 
 }
-
+/*Properties defined for the paragraph dynamically created with class InitialParagraph*/
 .InitialParagraph{
   width:500px; 
   font-size: 20px; 
   text-align:center; 
   margin:auto;
 }
-
+/*Properties defined for the question paragraph dynamically created with class Question*/
 .Question{
   width:400px; 
   text-align:left; 
   font-size:30px; 
   font-weight:bold;
 }
-
+/*Properties defined for the answers options buttons dynamically created with class OptionBtn*/
 .OptionBtn{
   display:block; 
   width: 500px; 
@@ -69,15 +72,15 @@ main {
   cursor: pointer;
   font-size:20px;
 }
-
+/*Properties when hovering over answers options buttons dynamically created with class OptionBtn*/
 .OptionBtn:hover{
   background-color: rgb(116, 18, 228);
 }
-
+/*Properties defined for the text dynamically created to show each question result with class QResult*/
 .QResult{
   font-size: 30px;
 }
-
+/*Properties defined for button dynamically created with class Store*/
 .Store{
   margin-left: 30px; 
   width: 100px; 
@@ -87,11 +90,11 @@ main {
   font-size: 20px;
   border-radius: 10px;
 }
-
+/*Properties when hovering over the button dynamically created with class Store*/
 .Store:hover{
   background-color: rgb(210, 18, 228);
 }
-
+/*Properties for the buttons dynamically created with class Back and Clear*/
 .Back, .Clear{
   background-color:rgb(34, 94, 206);
   width: 150px;
@@ -101,66 +104,69 @@ main {
   border-radius: 10px;
   margin-right: 40px;
 }
-
+/*Properties when hovering over the buttons dynamically created with class Back and Clear*/
 .Back:hover, .Clear:hover{
   background-color:rgb(27, 182, 209);
 }
-
+/*Properties defined for the list with class SList*/
 .Slist{
  list-style: none;
  padding-inline-start: 0px;
 }
-
+/*Properties defined for the list elements with class Elist*/
 .Elist{
   background-color:rgb(52, 79, 129);
   color:white;
   font-size: 20px;
 }
 
+/*Change properties for small screens*/
 @media (max-width: 550px) {
-
+  /*Change size of Main section*/
   #Mainsection{
     width:100%;
   }
-
+  /*Change size of initial paragraph*/
   .InitialParagraph{
     width:380px; 
   }
-
+  /*Change size and font size for the buttons that have the answers options*/
   .OptionBtn{
     width: 300px; 
     height: 50px; 
     font-size:15px;
   }
-
+  /*Change position/alignment of the button that stores the score*/
   .Store{
     margin-top: 30px;
     margin-left: 20px; 
   }
-
+  /*Change position/alignment of the question text*/
   .Question{
     margin-left: 30px;
   }
 }
 
+/*Change properties for smaller screens*/
 @media (max-width: 380px){
+  /*Change width and font size for initial paragraph*/
   .InitialParagraph{
     width:250px; 
     font-size: 15px; 
   }
-
+  /*Change position/alignment for Back and Clear buttons*/
   .Back, .Clear{
     margin-top:30px;
     margin-left: auto;
     margin-right: auto;
   }
-
+  /*Change size and font size for the buttons which have the answers options*/
   .OptionBtn{
     width: 170px; 
     height: 50px; 
     font-size:10px;
   }
-
+  /*Change size and font size for the question text*/
   .Question{
     font-size: 20px;
     width: 100%;
