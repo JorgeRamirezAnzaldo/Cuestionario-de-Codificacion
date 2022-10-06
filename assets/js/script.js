@@ -211,19 +211,24 @@ function StoreScore(event){
     var element2 = event.target;
     //Validate if the button with class Store was pressed
     if (element2.matches(".Store") === true) {
-        var input = resultsInput.value.trim(); //Get rid of white spaces
-        if (input !== ""){ //Validate that the user introduced something
-            var score = { //Create object for the score
-                initials : input, //Include initials
-                result : timeLeft //Include score
-            };
-            todos.push(score); //Add the object to the array that contains all scores
-            var almacenar = JSON.stringify(todos); //Convert the array of objects to string
-            localStorage.setItem("Scores", almacenar); //Save the obtained string to the localStorage
-            displayHighScores(); //Display high scores 
+        if(timeLeft >= 40){ //Verify if the final score is greater or equal to 40
+            var input = resultsInput.value.trim(); //Get rid of white spaces
+            if (input !== ""){ //Validate that the user introduced something
+                var score = { //Create object for the score
+                    initials : input, //Include initials
+                    result : timeLeft //Include score
+                };
+                todos.push(score); //Add the object to the array that contains all scores
+                var almacenar = JSON.stringify(todos); //Convert the array of objects to string
+                localStorage.setItem("Scores", almacenar); //Save the obtained string to the localStorage
+                displayHighScores(); //Display high scores 
+            }else{
+                alert("Introduce tus iniciales por favor"); //Send an alert to the user to introduce the initials
+                return;
+            }
         }else{
-            alert("Introduce tus iniciales por favor"); //Send an alert to the user to introduce the initials
-            return;
+            alert("Tu puntaje no ha sido guardado, pues ha sido menor a 40"); //Send an alert to the user that the score was not stored
+            displayHighScores(); //Display high scores
         }
     }
 
