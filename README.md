@@ -11,8 +11,8 @@
 * Si todas las preguntas son respondidas o el cronómetro llega a cero, el cuestionario se termina.
 * La puntuación final será igual al tiempo que haya quedado en el cronómetro.
 * Cuando termina el cuestionario, el usuario puede guardar sus iniciales y puntaje.
-* Las iniciales y puntaje del usuario solamente se guardarán en los "HIGH SCORES" si su puntaje es igual o mayor a 40.
-* Además, el puntaje igual o mayor a 40 solamente se podrá guardar si el usuario introduce algo en el campo de las iniciales.
+* Las iniciales y puntaje del usuario se guardarán en los "HIGH SCORES".
+* Además, el puntaje  solamente se podrá guardar si el usuario introduce algo en el campo de las iniciales.
 * Los puntajes desplegados en "HIGH SCORES" se despliegan de mayor a menor.
 * La aplicación ofrece la opción de limpiar los puntajes desplegados en "HIGH SCORES".
 

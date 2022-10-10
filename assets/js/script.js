@@ -211,7 +211,7 @@ function StoreScore(event){
     var element2 = event.target;
     //Validate if the button with class Store was pressed
     if (element2.matches(".Store") === true) {
-        if(timeLeft >= 40){ //Verify if the final score is greater or equal to 40
+        //if(timeLeft >= 40){ //Verify if the final score is greater or equal to 40
             var input = resultsInput.value.trim(); //Get rid of white spaces
             if (input !== ""){ //Validate that the user introduced something
                 var score = { //Create object for the score
@@ -226,10 +226,10 @@ function StoreScore(event){
                 alert("Introduce tus iniciales por favor"); //Send an alert to the user to introduce the initials
                 return;
             }
-        }else{
-            alert("Tu puntaje no ha sido guardado, pues ha sido menor a 40"); //Send an alert to the user that the score was not stored
-            displayHighScores(); //Display high scores
-        }
+        //}else{
+            //alert("Tu puntaje no ha sido guardado, pues ha sido menor a 40"); //Send an alert to the user that the score was not stored
+            //displayHighScores(); //Display high scores
+        //}
     }
 
 }
